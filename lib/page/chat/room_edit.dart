@@ -340,7 +340,7 @@ class _RoomEditPageState extends State<RoomEditPage> {
                               hintText: '每次开始新对话时，系统将会以 AI 的身份自动发送引导语。',
                               maxLines: 3,
                               showCounter: false,
-                              maxLength: 1000,
+                              maxLength: 1200,
                             ),
                             EnhancedInput(
                               title: Text(

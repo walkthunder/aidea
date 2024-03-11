@@ -264,7 +264,8 @@ class _ChatShareScreenState extends State<ChatShareScreen> {
             ClipRRect(
               borderRadius: BorderRadius.circular(8),
               child: CachedNetworkImageEnhanced(
-                imageUrl: snapshot.data!.qrCode,
+                // imageUrl: snapshot.data!.qrCode,
+                imageUrl: 'https://assets.greatermaker.cn/motoo/WechatIMG400.jpeg',
                 width: 100,
                 height: 100,
               ),

@@ -253,7 +253,8 @@ class _GalleryItemShareScreenState extends State<GalleryItemShareScreen> {
                                               borderRadius:
                                                   BorderRadius.circular(8),
                                               child: CachedNetworkImageEnhanced(
-                                                imageUrl: snapshot.data!.qrCode,
+                                                // imageUrl: snapshot.data!.qrCode,
+                                                imageUrl: 'https://assets.greatermaker.cn/motoo/WechatIMG400.jpeg',
                                                 width: 100,
                                                 height: 100,
                                               ),
@@ -261,7 +262,8 @@ class _GalleryItemShareScreenState extends State<GalleryItemShareScreen> {
                                             const SizedBox(width: 10),
                                             Expanded(
                                               child: Text(
-                                                snapshot.data!.message,
+                                                  (snapshot.data != null) ?
+                                                    snapshot.data!.message.replaceAll('AIdea', 'Motoo').replaceAll('GPT', '图像AI超能力') : '',
                                               ),
                                             ),
                                           ],
